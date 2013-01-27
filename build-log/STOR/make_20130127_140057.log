@@ -1,0 +1,27 @@
+gcc   -DVER_REVISION=\"6.0.2\" -DVER_DATE=\"2012-09-06\" -DVER_AUTHOR=\"'Erwin Waterlander'\" -DDEBUG=0  -DD2U_UNICODE -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -DENABLE_NLS -DLOCALEDIR=\"/home/iwabuchiken/ws/ws_eclipse/dos2unix/build/share/locale\" -DPACKAGE=\"dos2unix\" -O2 -Wall    -c dos2unix.c -o dos2unix.o
+gcc dos2unix.o querycp.o common.o    -o dos2unix
+xgettext -C --keyword=_ dos2unix.c unix2dos.c common.c -o po/dos2unix.pot
+msgmerge -U po/de.po po/dos2unix.pot --backup=numbered
+........ 完了.
+# change timestamp in case .po file was not updated.
+touch po/de.po
+msgfmt -c po/de.po -o po/de.mo
+msgmerge -U po/eo.po po/dos2unix.pot --backup=numbered
+....... 完了.
+# change timestamp in case .po file was not updated.
+touch po/eo.po
+msgfmt -c po/eo.po -o po/eo.mo
+msgmerge -U po/es.po po/dos2unix.pot --backup=numbered
+....... 完了.
+# change timestamp in case .po file was not updated.
+touch po/es.po
+msgfmt -c po/es.po -o po/es.mo
+msgmerge -U po/nl.po po/dos2unix.pot --backup=numbered
+...... 完了.
+# change timestamp in case .po file was not updated.
+touch po/nl.po
+msgfmt -c po/nl.po -o po/nl.mo
+msgmerge -U po/eo-x.po po/dos2unix.pot --backup=numbered
+....... 完了.
+# change timestamp in case .po file was not updated.
+touch po/eo-x.po
