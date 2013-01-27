@@ -1,0 +1,5 @@
+iwabuchiken@ubuntu:bin$ hd unix.txt
+00000000  61 62 63 64 65 0a 0a 0a  0a 0a                    |abcde.....|
+
+iwabuchiken@ubuntu:bin$ hd unix.txt
+00000000  61 62 63 64 65 0a 0a 0a  0a 0a                    |abcde.....|
