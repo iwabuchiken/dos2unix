@@ -1,0 +1,1 @@
+gcc   -DVER_REVISION=\"6.0.2\" -DVER_DATE=\"2012-09-06\" -DVER_AUTHOR=\"'Erwin Waterlander'\" -DDEBUG=0  -DD2U_UNICODE -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -DENABLE_NLS -DLOCALEDIR=\"/home/iwabuchiken/ws/ws_eclipse/dos2unix/build/share/locale\" -DPACKAGE=\"dos2unix\" -O2 -Wall    -c dos2unix.c -o dos2unix.o

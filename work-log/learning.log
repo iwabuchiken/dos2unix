@@ -3,3 +3,12 @@ iwabuchiken@ubuntu:bin$ hd unix.txt
 
 iwabuchiken@ubuntu:bin$ hd unix.txt
 00000000  61 62 63 64 65 0a 0a 0a  0a 0a                    |abcde.....|
+
+iwabuchiken@ubuntu:bin$ hd -cv unix.txt
+00000000  61 62 63 64 65 0a 0a 0a  0a 0a                    |abcde.....|
+0000000   a   b   c   d   e  \n  \n  \n  \n  \n                        
+000000a
+iwabuchiken@ubuntu:bin$ hd -cv dos.txt 
+00000000  61 62 63 64 65 0d 0a 0d  0a 0d 0a 0d 0a 0d 0a     |abcde..........|
+0000000   a   b   c   d   e  \r  \n  \r  \n  \r  \n  \r  \n  \r  \n    
+000000f
