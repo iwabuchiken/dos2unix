@@ -19,3 +19,5 @@ man/*
 po/
 po/*
 *.o
+Debug/
+Debug/*

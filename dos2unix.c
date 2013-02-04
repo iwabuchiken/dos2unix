@@ -283,7 +283,6 @@ int ConvertDosToUnix(FILE* ipInF, FILE* ipOutF, CFlag *ipFlag, char *progname)
 {
 
 		int RetVal = 0;
-		int TempChar;
 		int TempNextChar;
 		int *ConvTable;
 		int line_nr = 1;
@@ -1382,6 +1381,6 @@ int main (int argc, char *argv[])
 		pFlag->error = 1;
 	}
 	return (pFlag->error);
->>>>>>> B1_READ_unix2dos.c
+
 }
 
